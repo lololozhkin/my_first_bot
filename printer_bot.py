@@ -331,7 +331,7 @@ def main():
         fallbacks=[
             CommandHandler('cancel', settings_cancel_handler)
         ],
-        map_to_parents={
+        map_to_parent={
             SETTINGS: SETTINGS
         }
     )
