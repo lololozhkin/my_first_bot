@@ -11,7 +11,6 @@ import subprocess
 import time
 from env import *
 
-
 settings = {
     ORIENTATION: Orientation.portrait,
     SCALE: '100%',
@@ -331,11 +330,11 @@ def main():
         },
         fallbacks=[
             CommandHandler('cancel', settings_cancel_handler)
-        ]
+        ],
+        map_to_parents={
+            SETTINGS: SETTINGS
+        }
     )
-    settings_conv.__setattr__('map_to_parent', {
-        SETTINGS: SETTINGS
-    })
 
     conv_handler = ConversationHandler(
         entry_points=[
