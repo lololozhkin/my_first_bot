@@ -2,7 +2,7 @@ from Orientation import Orientation
 from telegram.ext import ConversationHandler
 
 
-TOKEN = "1031385889:AAEGzeUIUG_35rPSHA8-GMH8WzWnxmWuzx0"
+TOKEN = ""
 
 PORTRAIT = str(Orientation.portrait)
 LANDSCAPE = str(Orientation.landscape)
